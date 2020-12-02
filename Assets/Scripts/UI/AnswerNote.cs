@@ -13,8 +13,11 @@ public class AnswerNote : MonoBehaviour
 
     public GameObject Chapter2Lock;
     public GameObject Chapter3Lock;
+    
+    public static int Chapter = 3;
 
-    int Chapter = 1;
+    public GameObject[] ScrollBars = new GameObject[10];
+    int[] ScrollValues = new int[10];
 
     public void RightBtnClicked()
     {
@@ -51,5 +54,38 @@ public class AnswerNote : MonoBehaviour
         Pages[1].SetActive(true);
         Pages[2].SetActive(false);
         Pages[3].SetActive(false);
+    }
+
+
+    public void SelectBtnClicked()
+    {
+        
+        switch(Chapter)
+        {
+            case 1:
+                for (int i = 0; i < 4; i++)
+                    ScrollValues[i] = (int)(ScrollBars[i].GetComponent<Scrollbar>().value * 10);
+                if (ScrollValues[0] == 6 && ScrollValues[1] == 0 && ScrollValues[2] == 8 && ScrollValues[3] == 4)
+                {
+                    Chapter = 2;
+                }
+                break;
+            case 2:
+                for (int i = 4; i < 8; i++)
+                    ScrollValues[i] = (int)(ScrollBars[i].GetComponent<Scrollbar>().value * 10);
+                if (ScrollValues[4] == 2 && ScrollValues[5] == 0 && ScrollValues[6] == 6 && ScrollValues[7] == 8)
+                {
+                    Chapter = 3;
+                }
+                break;
+            case 3:
+                ScrollValues[8] = (int)(ScrollBars[8].GetComponent<Scrollbar>().value * 10);
+                ScrollValues[9] = (int)(ScrollBars[9].GetComponent<Scrollbar>().value * 10);
+                if (ScrollValues[8] == 4 && ScrollValues[9] == 2)
+                {
+                    Debug.Log("정답");
+                }
+                break;
+        }
     }
 }

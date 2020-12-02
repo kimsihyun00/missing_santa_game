@@ -6,9 +6,45 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/MainScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/SantaHouseOutScene.unity
+    guid: f17b7f142c47c9740ba603cbe38cb9f1
   - enabled: 1
     path: Assets/Scenes/SkullSwampScene.unity
     guid: e933f1067e95e424d8aab2b599c7dc28
+  - enabled: 1
+    path: Assets/Scenes/DaycareOutScene.unity
+    guid: e9a1416a6f4bd1445b6b8997c0e9e16a
+  - enabled: 1
+    path: Assets/Scenes/FastFoodScene.unity
+    guid: 2b555ec61bff13c41940605f0df05f7a
+  - enabled: 1
+    path: Assets/Scenes/PlaygroundScene.unity
+    guid: 2703320f80f6a2f4bbab52ed9a2d4d04
+  - enabled: 1
+    path: Assets/Scenes/RudolphForestScene.unity
+    guid: b72420eb004a06143b15cd8b2d6d5c64
+  - enabled: 1
+    path: Assets/Scenes/WitchHouseOutScene.unity
+    guid: 04905cf225a138f48a6f06ce385c3517
+  - enabled: 1
+    path: Assets/Scenes/WitchHouseInScene.unity
+    guid: fc7a0d3c7e3706549a6e9bde91828763
+  - enabled: 1
+    path: Assets/Scenes/DaycareInScene.unity
+    guid: bb838897a9cb00f458a16c8219d4a53a
+  - enabled: 1
+    path: Assets/Scenes/SantaHouseInScene.unity
+    guid: 8d1c8b87665b97047bc3bbd26cae5757
+  - enabled: 1
+    path: Assets/Scenes/SnowManGameScene.unity
+    guid: c6c303bd1ce91574b9f9ce2af866f03d
+  - enabled: 1
+    path: Assets/Scenes/SledGameScene.unity
+    guid: e49f3079b16b73c4bbd07a26bf205b72
+  - enabled: 1
+    path: Assets/Scenes/SkullGameScene.unity
+    guid: b8940f79db10bae40958e6b56b5e488b
   m_configObjects: {}

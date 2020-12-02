@@ -16,7 +16,7 @@ public class MainButton : MonoBehaviour
 {
     // All Buttons Handle
     public GameObject[] BtnPanels = new GameObject[5];
-    int BtnNum = -1;
+    public static int BtnNum = -1;
 
     public void CalBtnClicked()
     {
@@ -72,5 +72,4 @@ public class MainButton : MonoBehaviour
             BtnNum = -1;
         }
     }
-
 }
