@@ -74,6 +74,9 @@ public class ObjectVisible : MonoBehaviour
                 }
 
         }
+
+        if (i == 1 && j == 1)
+            Objects2[1].SetActive(true);
     }
 
     public void LeftBtnClicked()
@@ -102,7 +105,7 @@ public class ObjectVisible : MonoBehaviour
 
     IEnumerator WaitToChange()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         switch(MoveIndex)
         {

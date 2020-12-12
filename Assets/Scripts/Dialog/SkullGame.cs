@@ -9,8 +9,12 @@ public class SkullGame : MonoBehaviour
 
     public void ButtonClicked()
     {
-        SkullClear = true;
         SceneManager.LoadScene("SkullSwampScene");
+    }
+
+    public void AgainBtnClicked()
+    {
+        SceneManager.LoadScene("SkullGameScene");
     }
 
 }

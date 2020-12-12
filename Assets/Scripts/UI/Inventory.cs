@@ -10,7 +10,7 @@ enum Items
     BUTTONS,
     TOWEL,
     CARROT,
-    RULERS,
+    BRANCHS,
     POTION,
     COIN,
     HAMBURGER,
@@ -41,7 +41,7 @@ public class Inventory : MonoBehaviour
         "단추", 
         "타올", 
         "당근", 
-        "큰 자", 
+        "나뭇가지", 
         "물약", 
         "동전", 
         "햄버거",
@@ -56,10 +56,10 @@ public class Inventory : MonoBehaviour
     {
         "슬쩍 보아도 낡아 보이는 책이다.\n해석할 수 없는 문자로 되어있으며\n한쪽 아래에 루돌프가 그려져 있다.",
         "남이의 양말에서 발견한 열쇠이다.\n남이는 자신의 것이 아니라고 하는데\n 어디에 쓰이는 걸까...?",
-        "화장실에서 발견한 단추 2개이다.\n검은색 두 알이 눈사람의 눈이 될 수 있을까?",
+        "화장실에서 발견한 단추 모음이다.\n검은색 두 알이 눈사람의 눈이 될 수 있을까? 또 나머지 단추는 어디에 쓰지?",
         "기다란 타올이다.\n눈사람의 목이 허전할까 챙겨뒀는데\n 눈사람의 목에 걸어주면 좋아하겠지?",
         "제법 눈사람의 코처럼 생긴 당근이다.\n보라 말로는 눈사람의 코는 대부분 당근이라던데...",
-        "크고 단단한 자 2개이다.\n마치 팔처럼 생겼는데...\n이걸 어디에 쓸 수 있을까?!",
+        "크고 단단한 나뭇가지 2개이다.\n트리를 만들다 남은 것 같은데...\n이걸 어디에 쓸 수 있을까?!",
         "마녀 언니로부터 받은 물약이다.\n생명을 줄 수 있다던데...\n무엇에 생명을 줘야 할까?",
         "동전이다.\n이 마을 어딘가에 이 돈을 쓸 수 있는 곳이 있을 거야!",
         "키오스크에서 뽑은 햄버거이다.\n이 햄버거를 누구에게 줘야 할까?",
@@ -69,8 +69,8 @@ public class Inventory : MonoBehaviour
         "아마도 이 마을에 영원히 머물게 된\n마녀의 계약서 조각 중 하나이다.\n다 모으면 어떤 내용이 있을지...",
         "아마도 이 마을에 영원히 머물게 된\n마녀의 계약서 조각 중 하나이다.\n다 모으면 어떤 내용이 있을지..."
     };
-    public static int[] InventoryItems = { 2, 3, 4, 5, -1, -1, -1, -1, -1, -1 };
-    public static int ItemNums = 4;
+    public static int[] InventoryItems = { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 };
+    public static int ItemNums = 0;
     public int InventoryClickedNum = -1;
     
     public void BagBtnClicked()

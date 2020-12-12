@@ -24,7 +24,9 @@ public class RedQuest : MonoBehaviour
     private void Start()
     {
         if (!SnowManGame.SnowManClear)
+        {
             SnowManObj.SetActive(false);
+        }
 
         if (RedClicked)
             RedBefore.SetActive(false);
@@ -55,11 +57,11 @@ public class RedQuest : MonoBehaviour
                     index[1] = 1;
                 if (Inventory.InventoryItems[i] == (int)Items.CARROT)
                     index[2] = 1;
-                if (Inventory.InventoryItems[i] == (int)Items.RULERS)
+                if (Inventory.InventoryItems[i] == (int)Items.BRANCHS)
                     index[3] = 1;
             }
 
-            for(int i=0; i<index.Length;i++)
+            for (int i = 0; i < index.Length; i++)
             {
                 if (index[i] != 1)
                     allMaterials = false;
@@ -67,12 +69,12 @@ public class RedQuest : MonoBehaviour
 
             if (allMaterials)
             {
-                PopUpPanelText.text = "가방 안에 눈사람을 만들 재료가 모두 \n\n모였습니다.단추, 당근, 타올, 자로\n\n눈사람 만들기에 도전하시겠습니까?";
+                PopUpPanelText.text = "가방 안에 눈사람을 만들 재료가 모두 \n\n모였습니다.단추, 당근, 타올, 나뭇가지로\n\n눈사람 만들기에 도전하시겠습니까?";
                 PopUpBtn.interactable = true;
             }
             else
             {
-                PopUpPanelText.text = "가방 안에 눈사람의 눈코입 재료가 \n\n부족합니다.재료를 더 구해와서\n\n도전해보세요!(단추, 당근, 자, 타올)";
+                PopUpPanelText.text = "가방 안에 눈사람의 눈코입 재료가 \n\n부족합니다.재료를 더 구해와서\n\n도전해보세요!(단추, 당근, 나뭇가지, 타올)";
                 PopUpBtn.interactable = false;
             }
         }

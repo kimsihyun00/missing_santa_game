@@ -7,10 +7,38 @@ public class PotionGame : MonoBehaviour
 {
     public static bool PotionClear = false;
 
+    public ObjectLines Dialog;
+    public GameObject DialogPanel;
+
+    bool dialogPlayed = false;
+
+    private void Start()
+    {
+        Dialog = this.gameObject.GetComponent<ObjectLines>();
+    }
+
+    private void Update()
+    {
+        if (PotionClear && !dialogPlayed)
+        {
+            if (!DialogManager.Talking)
+            {
+                DialogManager.Talking = true;
+                DialogPanel.GetComponent<DialogManager>().StartDialog(Dialog);
+            }
+            dialogPlayed = true;
+        }
+    }
+
     public void ButtonClicked()
     {
-        PotionClear = true;
-        SceneManager.LoadScene("WitchHouseInScene");
+        Map.PlayerPlace = (int)Places.WITCH_HOUSE;
+        SceneManager.LoadScene("WitchHouseOutScene");
+    }
+
+    public void AgainBtnClicked()
+    {
+        SceneManager.LoadScene("PotionGameScene");
     }
 
 }

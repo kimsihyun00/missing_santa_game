@@ -9,7 +9,7 @@ public class CameraMove : MonoBehaviour
     bool UpClicked = false;
     bool DownClicked = false;
 
-    float CameraSpeed = 8f;
+    float CameraSpeed = 10f;
     
     int i = 1;
     int j = 1;

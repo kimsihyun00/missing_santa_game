@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: c527fd66d09916445ad1388fdc0146f8
   - enabled: 1
     path: Assets/Scenes/SantaHouseOutScene.unity
     guid: f17b7f142c47c9740ba603cbe38cb9f1
@@ -47,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SkullGameScene.unity
     guid: b8940f79db10bae40958e6b56b5e488b
+  - enabled: 1
+    path: Assets/Scenes/PotionGameScene.unity
+    guid: d11d2c5fc1ffb044c8a4bc7f7ff29674
+  - enabled: 1
+    path: Assets/Scenes/EventScene.unity
+    guid: 390221266126ea249a5af4ecb668293e
   m_configObjects: {}

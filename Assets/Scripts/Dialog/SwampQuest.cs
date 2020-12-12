@@ -20,9 +20,12 @@ public class SwampQuest : MonoBehaviour
 
     public void SwampBeforeBtnClicked()
     {
-        SwampClicked = true;
-        SwampBefore.SetActive(false);
-        SwampAfter.SetActive(true);
+        if (AnswerNote.Chapter >= 2)
+        {
+            SwampClicked = true;
+            SwampBefore.SetActive(false);
+            SwampAfter.SetActive(true);
+        }
     }
 
     public void SwampAfterBtnClicked()

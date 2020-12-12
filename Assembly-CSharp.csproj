@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Dialog\CandleQuest.cs" />
     <Compile Include="Assets\Scripts\Dialog\DialogManager.cs" />
+    <Compile Include="Assets\Scripts\Dialog\DiaryQuest.cs" />
     <Compile Include="Assets\Scripts\Dialog\GasQuest.cs" />
     <Compile Include="Assets\Scripts\Dialog\InventoryAdd.cs" />
     <Compile Include="Assets\Scripts\Dialog\KioskQuest.cs" />
@@ -78,11 +79,27 @@
     <Compile Include="Assets\Scripts\Dialog\SkullGame.cs" />
     <Compile Include="Assets\Scripts\Dialog\SledGame.cs" />
     <Compile Include="Assets\Scripts\Dialog\SnowManGame.cs" />
+    <Compile Include="Assets\Scripts\Dialog\SnowmanQuest.cs" />
     <Compile Include="Assets\Scripts\Dialog\SwampQuest.cs" />
+    <Compile Include="Assets\Scripts\Dialog\WitchQuest.cs" />
     <Compile Include="Assets\Scripts\Dialog\YellowQuest.cs" />
+    <Compile Include="Assets\Scripts\MiniGame\Potion\Recipe.cs" />
+    <Compile Include="Assets\Scripts\MiniGame\Skull\RandomSelect.cs" />
+    <Compile Include="Assets\Scripts\MiniGame\Sled\Obstacles.cs" />
+    <Compile Include="Assets\Scripts\MiniGame\Sled\SledCamera.cs" />
+    <Compile Include="Assets\Scripts\MiniGame\Sled\SledMove.cs" />
+    <Compile Include="Assets\Scripts\MiniGame\Snowman\Buttons.cs" />
+    <Compile Include="Assets\Scripts\MiniGame\Snowman\Eyes.cs" />
+    <Compile Include="Assets\Scripts\MiniGame\Snowman\Hat.cs" />
+    <Compile Include="Assets\Scripts\MiniGame\Snowman\LeftHand.cs" />
+    <Compile Include="Assets\Scripts\MiniGame\Snowman\Mouth.cs" />
+    <Compile Include="Assets\Scripts\MiniGame\Snowman\Muffler.cs" />
+    <Compile Include="Assets\Scripts\MiniGame\Snowman\Nose.cs" />
+    <Compile Include="Assets\Scripts\MiniGame\Snowman\RightHand.cs" />
     <Compile Include="Assets\Scripts\UI\AnswerNote.cs" />
     <Compile Include="Assets\Scripts\UI\Calendar.cs" />
     <Compile Include="Assets\Scripts\UI\CameraMove.cs" />
+    <Compile Include="Assets\Scripts\UI\Event.cs" />
     <Compile Include="Assets\Scripts\UI\Hint.cs" />
     <Compile Include="Assets\Scripts\UI\InvenPopUp.cs" />
     <Compile Include="Assets\Scripts\UI\Inventory.cs" />
@@ -92,6 +109,7 @@
     <Compile Include="Assets\Scripts\UI\MoveButton.cs" />
     <Compile Include="Assets\Scripts\UI\ObjectVisible.cs" />
     <Compile Include="Assets\Scripts\UI\Scroll.cs" />
+    <Compile Include="Assets\Scripts\UI\StartMain.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

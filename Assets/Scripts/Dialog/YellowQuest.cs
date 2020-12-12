@@ -30,9 +30,12 @@ public class YellowQuest : MonoBehaviour
 
     public void YellowBeforeBtnClicked()
     {
-        YellowClicked = true;
-        YellowBefore.SetActive(false);
-        YellowAfter.SetActive(true);
+        if (AnswerNote.Chapter >= 3)
+        {
+            YellowClicked = true;
+            YellowBefore.SetActive(false);
+            YellowAfter.SetActive(true);
+        }
     }
 
     public void YellowAfterBtnClicked()

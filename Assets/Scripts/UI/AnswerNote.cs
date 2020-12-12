@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class AnswerNote : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class AnswerNote : MonoBehaviour
     public GameObject Chapter2Lock;
     public GameObject Chapter3Lock;
     
-    public static int Chapter = 3;
+    public static int Chapter = 1;
 
     public GameObject[] ScrollBars = new GameObject[10];
     int[] ScrollValues = new int[10];
@@ -68,6 +69,9 @@ public class AnswerNote : MonoBehaviour
                 if (ScrollValues[0] == 6 && ScrollValues[1] == 0 && ScrollValues[2] == 8 && ScrollValues[3] == 4)
                 {
                     Chapter = 2;
+                    Chapter2Lock.SetActive(false);
+                    Chapter3Lock.SetActive(true);
+                    SceneManager.LoadScene("EventScene", LoadSceneMode.Additive);
                 }
                 break;
             case 2:
@@ -76,6 +80,9 @@ public class AnswerNote : MonoBehaviour
                 if (ScrollValues[4] == 2 && ScrollValues[5] == 0 && ScrollValues[6] == 6 && ScrollValues[7] == 8)
                 {
                     Chapter = 3;
+                    Chapter2Lock.SetActive(false);
+                    Chapter3Lock.SetActive(false);
+                    SceneManager.LoadScene("EventScene", LoadSceneMode.Additive);
                 }
                 break;
             case 3:
@@ -83,7 +90,8 @@ public class AnswerNote : MonoBehaviour
                 ScrollValues[9] = (int)(ScrollBars[9].GetComponent<Scrollbar>().value * 10);
                 if (ScrollValues[8] == 4 && ScrollValues[9] == 2)
                 {
-                    Debug.Log("정답");
+                    Chapter = 4;
+                    SceneManager.LoadScene("EventScene", LoadSceneMode.Additive);
                 }
                 break;
         }

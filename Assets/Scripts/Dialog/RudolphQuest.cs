@@ -11,7 +11,6 @@ public class RudolphQuest : MonoBehaviour
 
     public GameObject RudolphPopUpPanel;
 
-    public ObjectLines Dialog;
     public GameObject DialogPanel;
 
     public GameObject OldBookPopUpPanel;
@@ -27,8 +26,6 @@ public class RudolphQuest : MonoBehaviour
     {
         if (RudolphClicked)
             RudolphBefore.SetActive(false);
-
-        Dialog = this.gameObject.GetComponent<ObjectLines>();
     }
 
     private void Update()
@@ -75,8 +72,6 @@ public class RudolphQuest : MonoBehaviour
                 RudolphPopUpPanel.SetActive(true);
             else
             {
-                DialogManager.Talking = true;
-                DialogPanel.GetComponent<DialogManager>().StartDialog(Dialog);
                 OldBookOpen = true;
                 OldBookPopUp = false;
             }
